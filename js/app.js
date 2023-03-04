@@ -7,54 +7,54 @@ const loadCardData = () => {
             showCardData(cardSlice)
         } )
 }
-// const showAll = document.getElementById('show-all');
-// const showCardData = (tools) => {
+const showAll = document.getElementById('show-all');
+const showCardData = (tools) => {
 
-//     for (const tool of tools) {
+    for (const tool of tools) {
 
-//          const cardList = document.getElementById('card-list');
+         const cardList = document.getElementById('card-list');
         
-//         const cardDiv = document.createElement('div');
+        const cardDiv = document.createElement('div');
 
-//         cardDiv.classList.add('card', 'w-96', 'bg-base-100', 'shadow-xl')
-//         cardDiv.innerHTML = `
-//                     <figure><img src="${tool.image}" alt="Shoes" /></figure>
-//                     <div class="card-body">
-//                         <h2 class="card-title">Features</h2>
+        cardDiv.classList.add('card', 'w-96', 'bg-base-100', 'shadow-xl')
+        cardDiv.innerHTML = `
+                    <figure><img src="${tool.image}" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Features</h2>
                         
-//                         <ul>
-//                         <li>1.${tool.features[0]}<li/>
-//                         <li>2.${tool.features[1]}<li/>
-//                         <li>3.${tool.features[2]}<li/>
-//                         <ul/>
-//                     <div>
-//                     <hr> 
-//                   <div class= justify-end items-center >
-//                   <div> 
-//                   <div>
-//                       <div class="card-title">
-//                               ${(tool.name)}
-//                       </div>
-//                       <div>
-//                           <i class="fa-regular fa-calendar-days"></i>
-//                           ${tool.published_in}
-//                       </div>
-//                   </div>
-//               </div>
-//               <div class='flex justify-end'>
-//                   <div>
-//                   <label for="my-modal-5"><i class="fa-solid fa-arrow-right" onclick="loadModalData('${tool.id}')"></i></label>
-//                   </div>
-//               </div>
-//                   </div>
+                        <ul>
+                        <li>1.${tool.features[0]}<li/>
+                        <li>2.${tool.features[1]}<li/>
+                        <li>3.${tool.features[2]}<li/>
+                        <ul/>
+                    <div>
+                    <hr> 
+                  <div class= justify-end items-center >
+                  <div> 
+                  <div>
+                      <div class="card-title">
+                              ${(tool.name)}
+                      </div>
+                      <div>
+                          <i class="fa-regular fa-calendar-days"></i>
+                          ${tool.published_in}
+                      </div>
+                  </div>
+              </div>
+              <div class='flex justify-end'>
+                  <div>
+                  <label for="my-modal-5"><i class="fa-solid fa-arrow-right" onclick="loadModalData('${tool.id}')"></i></label>
+                  </div>
+              </div>
+                  </div>
                     
                       
-//         `;
-//         cardList.appendChild(cardDiv)
+        `;
+        cardList.appendChild(cardDiv)
 
-//     }
-//     toggleSpinner(false)
-// }
+    }
+    toggleSpinner(false)
+}
 
 // document.getElementById('btn-show-all').addEventListener('click',function(){
 //     toggleSpinner(true)
