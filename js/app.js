@@ -56,17 +56,17 @@ const showCardData = (tools) => {
     toggleSpinner(false)
 }
 
-// document.getElementById('btn-show-all').addEventListener('click',function(){
-//     toggleSpinner(true)
-//     const cardList=document.getElementById('card-list');
-//     cardList.innerHTML='';
-//     fetch(`https://openapi.programming-hero.com/api/ai/tools`)
-//         .then(res => res.json())
-//         .then(data =>showCardData(data.data.tools))
-//         showAll.classList.add('hidden')
+document.getElementById('btn-show-all').addEventListener('click',function(){
+    toggleSpinner(true)
+    const cardList=document.getElementById('card-list');
+    cardList.innerHTML='';
+    fetch(`https://openapi.programming-hero.com/api/ai/tools`)
+        .then(res => res.json())
+        .then(data =>showCardData(data.data.tools))
+        showAll.classList.add('hidden')
 
 
-// })
+})
 
 
 // const loadModalData=(id)=>{
