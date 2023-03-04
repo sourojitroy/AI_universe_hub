@@ -99,11 +99,11 @@ const showModalData=(dataAll)=>{
     <div class="flex gap-20">
         <div>
             <h3 class= "font-semibold text-2xl mb-4">Features</h3>
-            <ul>
+            <ol>
             <li>${dataAll.features[1].feature_name}</li>
             <li>${dataAll.features[2].feature_name}</li>
             <li>${dataAll.features[3].feature_name}</li>
-            </ul>
+            </ol>
         </div>
         <div>
          <h3 class= "font-semibold text-2xl mb-4">Integrations</h3>
