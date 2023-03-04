@@ -1,12 +1,12 @@
-// const loadCardData = () => {
-//     toggleSpinner(true)
-//     fetch(`https://openapi.programming-hero.com/api/ai/tools`)
-//         .then(res => res.json())
-//         .then(data =>{
-//             const cardSlice=data.data.tools.slice(0,6);
-//             showCardData(cardSlice)
-//         } )
-// }
+const loadCardData = () => {
+    toggleSpinner(true)
+    fetch(`https://openapi.programming-hero.com/api/ai/tools`)
+        .then(res => res.json())
+        .then(data =>{
+            const cardSlice=data.data.tools.slice(0,6);
+            showCardData(cardSlice)
+        } )
+}
 // const showAll = document.getElementById('show-all');
 // const showCardData = (tools) => {
 
