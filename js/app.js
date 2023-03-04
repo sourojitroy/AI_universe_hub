@@ -69,12 +69,12 @@ document.getElementById('btn-show-all').addEventListener('click',function(){
 })
 
 
-// const loadModalData=(id)=>{
-//     toggleSpinner(true)
-//     fetch(`https://openapi.programming-hero.com/api/ai/tool/${id}`)
-//     .then(res => res.json())
-//     .then(data => showModalData(data.data))
-// }
+const loadModalData=(id)=>{
+    toggleSpinner(true)
+    fetch(`https://openapi.programming-hero.com/api/ai/tool/${id}`)
+    .then(res => res.json())
+    .then(data => showModalData(data.data))
+}
 
 // const showModalData=(dataAll)=>{
 //     console.log(dataAll)
