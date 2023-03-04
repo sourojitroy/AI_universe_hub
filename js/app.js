@@ -131,12 +131,12 @@ const showModalData=(dataAll)=>{
     toggleSpinner(false);
 }
 
-// const toggleSpinner = isLoading => {
-//     const loader = document.getElementById('spinner');
-//     if (isLoading) {
-//         loader.classList.remove('hidden');
-//     }
-//     else {
-//         loader.classList.add('hidden')
-//     }
-// }
+const toggleSpinner = isLoading => {
+    const loader = document.getElementById('spinner');
+    if (isLoading) {
+        loader.classList.remove('hidden');
+    }
+    else {
+        loader.classList.add('hidden')
+    }
+}
