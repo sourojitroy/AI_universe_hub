@@ -22,11 +22,11 @@ const showCardData = (tools) => {
                     <div class="card-body">
                         <h2 class="card-title">Features</h2>
                         
-                        <ul>
+                        <ol>
                         <li>1.${tool.features[0]}<li/>
                         <li>2.${tool.features[1]}<li/>
                         <li>3.${tool.features[2]}<li/>
-                        <ul/>
+                        <ol/>
                     <div>
                     <hr> 
                   <div class= justify-end items-center >
